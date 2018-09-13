@@ -7,6 +7,10 @@
   #whole-doc {
     font-family: Black Ops One;
     viewport content:
+      @media (max-width: 600px) {
+    #whole-doc {
+      font-size: 80px;
+        }}
   }
   #header-img {
     height: 100px;
@@ -23,40 +27,13 @@
     align-items: right;
   }
   #models {
-    display: flex;
-  }
-  #box-1{
-    width:20%;
-    height: 20%;
-  }
-  #box-2{
-    width:20%;
-    height:20%;
-  }
-  #box-3{
-    width:20%;
-    height:20%;
-  }
-  #box-4{
-    width:20%;
-    height:20%
-  }
-  #box-5{
-    width:20%;
-    height:20%;
-  }
-  #box-6{
-    width:20%;
-    height:20%;
-  }
-  @media (max-width: 600px) {
-    #whole-doc {
-      font-size: 80px;
-    }
-    
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    flex-direction: row;
   }
  
-    
     
 </style>
 
@@ -86,30 +63,35 @@
     </form>
     </div>
 <h1><a name="link1">Tacoma Models</a></h1>
-<div id="models" class="grid">
-  <div>
-  <div id="box-container">
-    <h2>SR</h2> 
-    <div id="box-1"> Tacoma SR
+<div id="models" class="grid-container">
+    <div id="box-1" class="grid-item">
+      <h2>SR</h2> Tacoma SR
 2.7-liter DOHC 4-cylinder; 159 hp; 180 lb.-ft.,
 Entune Audio, Backup camera, 2.2-inch LCD odometer
 </div>
-    <h2>SR5</h2>
-    <div id="box-2">
+    
+    <div id="box-2" class="grid-item">
+      <h2>SR5</h2>
 Tacoma SR5	In addition to SR standard features...	Available 3.5-liter DOHC V6; 278 hp; 265 lb.-ft.	Entune Audio Plus with Connected Navigation App	4.2-inch Multi-Information Display
 </div> 
-    <h2>TRD-SPORT</h2>
-    <div id="box-3">Tacoma TRD Sport	In addition to SR5 standard features...	Standard 3.5-liter DOHC V6; 278 hp; 265 lb.-ft.	Entune Premium Audio with Integrated Navigation and App Suite	Qi-compatible wireless smartphone charging
+    
+    <div id="box-3" class="grid-item">
+      <h2>TRD-SPORT</h2>
+      Tacoma TRD Sport	In addition to SR5 standard features...	Standard 3.5-liter DOHC V6; 278 hp; 265 lb.-ft.	Entune Premium Audio with Integrated Navigation and App Suite	Qi-compatible wireless smartphone charging
 </div>
-    <h2>TRD-OFFROAD</h2>
-    <div id="box-4">Tacoma TRD Off-Road	In addition to TRD Sport standard features...	Multi-terrain Select and Crawl Control	Off-road tuned suspension with Bilstein® shocks	Entune Premium Audio with Integrated Navigation and App Suite
+    
+    <div id="box-4" class="grid-item">
+      <h2>TRD-OFFROAD</h2>
+      Tacoma TRD Off-Road	In addition to TRD Sport standard features...	Multi-terrain Select and Crawl Control	Off-road tuned suspension with Bilstein® shocks	Entune Premium Audio with Integrated Navigation and App Suite
 </div>
-    <h2>Limited</h2>
-    <div id="box-5">
+    
+    <div id="box-5" class="grid-item">
+      <h2>Limited</h2>
 Tacoma Limited	In addition to TRD Off-Road standard features...	Power tilt/slide moonroof	Blind Spot Monitor and Rear Cross-Traffic Alert	Entune Premium JBL Audio with Integrated Navigation and App Suite.
     </div>
-    <h2>TRD-PRO</h2>
-    <div id="box-6">Tacoma TRD Pro	In addition to Limited standard features...	TRD-tuned off-road suspension with 2.5-in. FOX Internal Bypass shocks	Smart Key System on driver’s side door with Push Button Start	Active Traction Control</div>
+    <div id="box-6" class="grid-item">
+      <h2>TRD-PRO</h2>
+      Tacoma TRD Pro	In addition to Limited standard features...	TRD-tuned off-road suspension with 2.5-in. FOX Internal Bypass shocks	Smart Key System on driver’s side door with Push Button Start	Active Traction Control</div>
      </div>
     
 <h1><a name="link2">Tacoma Awards</a></h1>
