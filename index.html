@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-  
-<style>
-@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
-   
+  @import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
+  <style>
   #whole-doc {
     font-family: Black Ops One;
     background-color: rgb(0,90,51);
@@ -15,10 +13,12 @@
   }
   h2 {
     font-style: bold;
+    @media (max-width: 650px) {
+    font-size: 10px;
+  }
   }
   #nav-bar {
-    position: top;
-    padding: 0px 20px;
+    position: absolute;
     top: 0;
     display: flex;
     align-items: top;
@@ -58,8 +58,11 @@
     border-style: solid;
     border-color: white;
   }
-</style>
+  </style>
 
+
+ 
+  
   <body id="whole-doc">
 <div>
   <header id="header">
@@ -68,10 +71,10 @@
   <div>
     <nav id="nav-bar">
      <ul>
-       <li><a class="nav-link" href="#link1">Tacoma Models</a></li>
-       <li><a class="nav-link" href="#link2">Tacoma Awards</a></li>
-       <li><a class="nav-link" href="#link3">Features</a></li>
-       <li><a class="nav-link" href="#link4">Where to buy</a></li>
+       <li><a class="nav-link" href="#tacoma-models">Tacoma Models</a></li>
+       <li><a class="nav-link" href="#tacoma-awards">Tacoma Awards</a></li>
+       <li><a class="nav-link" href="#features">Features</a></li>
+       <li><a class="nav-link" href="#where-to-buy">Where to buy</a></li>
      </ul>
     </nav>
   </div>
@@ -79,11 +82,11 @@
     </div>
   <div>
     <form id="form" action="https://www.freecodecamp.com/email-submit"> *Email:
-      <input name="email" id="email" placeholder="Email Address" type="email" required>
+      <input id="email" name="email" placeholder="Email Address" type="email" required>
     <input id="submit" type="submit" value="submit" class="btn">
     </form>
     </div>
-    <h1><a name="link1"><u>Tacoma Models</u></a></h1>
+    <h1><section id="tacoma-models"><u>Tacoma Models</u></section></h1>
 <div id="models" class="grid-container">
     <div id="box-1" class="grid-item">
       <h2><u>SR</u></h2> Tacoma SR
@@ -124,10 +127,10 @@ Tacoma Limited	In addition to TRD Off-Road standard features...	Power tilt/slide
   </div>
      </div>
 
-    <h1><a name="link2"><u>Tacoma Award</u>s</a></h1>
+    <h1><section id="tacoma-awards"><u>Tacoma Awards</u></section></h1>
 
-    <h1><a name="link3"><u>Features</u></a></h1>
+    <h1><section id="features"><u>Features</u></section></h1>
 <iframe id="video" src="https://www.youtube.com/embed/zKXKetZbZSw" width="776" height="437" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen> </iframe>
-    <h1><a name="link4"><u>Where to buy</u></a></h1>
+    <h1><section id="where-to-buy"><u>Where to buy</u></section></h1>
 </div>
   </body>
