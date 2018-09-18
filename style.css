@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+  @media (max-width:800px){
+    background-repeat: repeat;
+    background-attachment:scroll;
+  
+  }
 }
 h1 {
   font-size: 5vw;
