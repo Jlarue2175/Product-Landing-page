@@ -2,8 +2,13 @@
 
 #whole-doc {
     font-family: Black Ops One;
-    background-color: rgb(0,90,51);
-  }
+  background:url("https://images.hgmsites.net/hug/2018-toyota-tacoma_100627941_h.jpg"), 
+url("https://postmediadriving.files.wordpress.com/2016/10/dsc_1392.jpg?quality=80&strip=all&w=800&h=520&crop=1"),
+url("http://payload374.cargocollective.com/1/8/285359/9794222/0001_Limited_interior-copy_1000.jpg");
+  background-position: center-top, bottom-left, bottom-right;
+  background-repeat: no-repeat,no-repeat,repeat;
+  background-size: 100%,100%,100%;
+}
 #header {
 }
 #header1 {
@@ -15,7 +20,10 @@
     position: absolute;
     right: 10px;
     top: 10px;
-   
+    border-color: #333;
+    border-style: solid;
+    border-width: 0.75vw;
+    opacity:1;
     @media (max-width: 400px) {
       max-height: 100px;
       max-width: auto;
@@ -48,7 +56,7 @@ li{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  background-color: #333;
+  background-color: rgb(128, 130, 133);
 }
 #navi :hover {
   background-color: #111;
@@ -66,6 +74,7 @@ li{
     text-align: center;
     background-color:	rgb(128, 130, 133);
     padding:20px;
+    opacity: 0.7;
     @media (max-width: 410px) {
     grid-auto-flow:row; 
     grid-template-columns: auto;
