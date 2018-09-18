@@ -2,12 +2,11 @@
 
 #whole-doc {
     font-family: Black Ops One;
-  background:url("https://images.hgmsites.net/hug/2018-toyota-tacoma_100627941_h.jpg"), 
-url("https://postmediadriving.files.wordpress.com/2016/10/dsc_1392.jpg?quality=80&strip=all&w=800&h=520&crop=1"),
-url("http://payload374.cargocollective.com/1/8/285359/9794222/0001_Limited_interior-copy_1000.jpg");
-  background-position: center-top, bottom-left, bottom-right;
-  background-repeat: no-repeat,no-repeat,repeat;
-  background-size: 100%,100%,100%;
+  color: black;
+  background-image: url("https://images.hgmsites.net/hug/2018-toyota-tacoma_100627941_h.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 #header {
 }
@@ -105,3 +104,8 @@ li{
     border-style: solid;
     border-color: white;
   }
+#video {
+  display:block;
+  text-align: center;
+  margin:0 auto;
+}
