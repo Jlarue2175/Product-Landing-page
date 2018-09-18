@@ -4,13 +4,13 @@
     font-family: Black Ops One;
   color: black;
   background-image: url("https://images.hgmsites.net/hug/2018-toyota-tacoma_100627941_h.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% auto;
   background-attachment: fixed;
   @media (max-width:800px){
     background-repeat: repeat;
     background-attachment:scroll;
-  
+    width:100%;
+      height: auto;
   }
 }
 h1 {
