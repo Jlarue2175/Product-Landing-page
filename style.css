@@ -9,8 +9,7 @@
   @media (max-width:800px){
     background-repeat: repeat;
     background-attachment:scroll;
-    width:100%;
-      height: auto;
+    background-size:100% auto;
   }
 }
 h1 {
@@ -127,4 +126,5 @@ li{
 }
 #new-truck:hover {
   background-color:blue;
+  
 }
