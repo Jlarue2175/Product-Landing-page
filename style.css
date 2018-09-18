@@ -8,6 +8,9 @@
   background-size: 100%;
   background-attachment: fixed;
 }
+h1 {
+  font-size: 5vw;
+}
 #header {
 }
 #header1 {
@@ -61,8 +64,8 @@ li{
   background-color: #111;
 }
 #form {
-  font-size: 3vw;
-
+  font-size: 2vw;
+  padding: 0px;
 }
   #models {
     grid-gap: 10px;
@@ -108,4 +111,16 @@ li{
   display:block;
   text-align: center;
   margin:0 auto;
+}
+#to-buy{
+  color: white;
+}
+#new-truck {
+  width:30vw;
+  height:5vw;
+  font-size: 3vw;
+}
+#new-truck:hover {
+  background-color:blue;
+  background-text: "congrats!";
 }
