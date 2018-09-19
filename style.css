@@ -15,10 +15,12 @@
 h1 {
   font-size: 5vw;
 }
-#header {
-}
 #header1 {
   font-size: 80px;
+  @media (max-width:800px){
+    font-size: 8vw;
+    padding: 4vw;
+  }
 }
   #header-img {
     max-height: 200px;
@@ -30,9 +32,11 @@ h1 {
     border-style: solid;
     border-width: 0.75vw;
     opacity:1;
-    @media (max-width: 400px) {
-      max-height: 100px;
+    @media (max-width: 800px) {
+      max-height: 20vw;
       max-width: auto;
+      top:10vw;
+      right:2vw;
     }
     }
   h2 {
@@ -46,6 +50,7 @@ h1 {
     top: 0px;
     display: flex;
     align-items: top;
+    
   }
 #navigation-bar {
   list-style-type: none;
@@ -55,6 +60,9 @@ h1 {
 }
 li{
   float:left;
+  @media (max-width:800px){
+    font-size: 2.5vw;
+  }
 }
 #navi {
   display: block;
@@ -63,6 +71,9 @@ li{
     padding: 14px 16px;
     text-decoration: none;
   background-color: rgb(128, 130, 133);
+  @media (max-width:800px){
+    padding:3vw 3vw;
+  }
 }
 #navi :hover {
   background-color: #111;
@@ -115,6 +126,10 @@ li{
   display:block;
   text-align: center;
   margin:0 auto;
+  @media (max-width:800px){
+    max-width: 100%;
+    max-width: auto;
+  } 
 }
 #to-buy{
   color: white;
@@ -123,8 +138,12 @@ li{
   width:30vw;
   height:5vw;
   font-size: 3vw;
+  @media (max-width:800px){
+    width:50vw;
+    height: 10vw;
+    text:5vw;
+  }
 }
 #new-truck:hover {
   background-color:blue;
-  
 }
